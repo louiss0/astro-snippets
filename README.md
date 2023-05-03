@@ -39,8 +39,8 @@ Here is a table with a list of all the snippets you can use. Hope this is helpfu
 
 | **Snippet**      | **Purpose**                                                   |
 | ---------------- | ------------------------------------------------------------- |
-| iige             | Immediately Invoked Generator Expression                      |
-| iife             | Immediately Invoked Function Expression                       |
+| a:iige           | Immediately Invoked Generator Expression                      |
+| a:iife           | Immediately Invoked Function Expression                       |
 | a:base           | Astro Single File Component                                   |
 | a:cbase          | Astro Single File Component w Client Script                   |
 | a:base-hmf       | This is a header footer main snippet                          |
@@ -69,8 +69,10 @@ Here is a table with a list of all the snippets you can use. Hope this is helpfu
 | a:clt       | This is the single collection setup                     |
 | a:clt--data | This is the single data collection setup with relations |
 
-## Release Notes
+## Recommendations
 
-I have decided that the release notes should be kept in the changelog file. I don't understand why both exist. Look at the changelog to see changes to this library.
+Please use these snippets along with these extensions:
 
----
+- TS?X Snippets 
+- Auto Rename Tag
+- Astro (duh) 
