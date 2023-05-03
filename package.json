@@ -2,7 +2,7 @@
   "name": "astro-snippets",
   "displayName": "Astro Snippets",
   "description": "It is set of snippets for Astro JS ",
-  "version": "2.2.2",
+  "version": "2.3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/louiss0/astro-snippets"
