@@ -52,8 +52,8 @@ Here is a table with a list of all the snippets you can use. Hope this is helpfu
 | a-base-lpg       | This a page with layout scaffolding                           |
 | a-base-lpg-hmf   | Layout Page with Header and Footer slot                       |
 | a-base-gc-gsp    | Scaffold for Get Collections With getStaticPaths              |
-| a-cbase-dvst     | Astro base with Define Vars Style                             |
-| a-cbase-dvsc     | Astro base with Define Vars Script                            |
+| a-cbase--dvst    | Astro base with Define Vars Style                             |
+| a-cbase--dvsc    | Astro base with Define Vars Script                            |
 | a-tern           | A ternary expression scaffold                                 |
 | a-map            | This is a simple map expression for Astro                     |
 | a-map-ft         | This is a map expression for Astro using a anonymous function |

@@ -1,35 +1,14 @@
-/* 
-
-"Template ": {
-        "prefix": "",
-        "description": "",
-        "isFileTemplate": false,
-        "body": [
-            "",
-            ""
-        ],
-    },
-
-*/
 {
     "Immediately Invoked Function Expression ": {
         "prefix": "a:iife",
         "description": "This is an immediately invoked function expression",
         "isFileTemplate": false,
-        "body": [
-            "{(()=> {",
-            "",
-            "${1}",
-            "",
-            "})()}"
-        ],
+        "body": "{(()=> {\n${1}\n})()}"
     },
     "Immediately Invoked Generator Expression": {
         "body": [
             "{(function* () {",
-            "for(let ${0:item} of ${0:item}s) {",
-            "${1}",
-            "}",
+            "for(let ${0:item} of ${0:item}s) {\n${1}\n}",
             "})()}"
         ],
         "prefix": "a:iige",
@@ -40,14 +19,10 @@
         "description": "This is a basic scaffold for a component in Astro",
         "isFileTemplate": true,
         "body": [
-            "---",
-            "${3}",
-            "---",
-            "<${1:div}>",
-            " ",
-            "</${1:div}>",
-            " ",
-            "<style>${2}</style>",
+            "---\n${3}\n---",
+            "<${1:div}>\n",
+            "</div>\n",
+            "<style>\n${2}\n</style>",
         ],
     },
     "Astro Client Script Base": {
@@ -55,14 +30,9 @@
         "description": "Astro Single File Component w Client Script",
         "isFileTemplate": true,
         "body": [
-            "<${0:div}>",
-            "</${0:div}>",
-            "",
-            "<style>${1}</style>",
-            "",
-            "<script>",
-            "",
-            "</script>",
+            "<${0:div}>\n</div>\n",
+            "<style>\n${1}\n</style>\n",
+            "<script>\n</script>",
         ],
     },
     "Header Main Footer Component ": {
@@ -70,11 +40,7 @@
         "description": "This is a header footer main snippet",
         "isFileTemplate": true,
         "body": [
-            "---",
-            "${5}",
-            "---",
-            "",
-            "",
+            "---\n${5}\n---",
             "<!DOCTYPE html>",
             "<html lang='en'>",
             "<head>",
@@ -82,57 +48,36 @@
             "<meta http-equiv='X-UA:Compatible' content='IE=edge' />",
             "<meta name='viewport' content='width=device-width, initial-scale=1.0' />",
             "<title>Document</title>",
-            "</head>",
+            "</head>\n",
             "<body>",
-            "<header>",
-            "${1}",
-            "</header>\n",
-            "<main>",
-            "${2}",
-            "</main>",
-            "<footer>",
-            "${3}",
-            "</footer>",
+            "<header>\n${1}\n</header>\n",
+            "<main>\n${2}\n</main>\n",
+            "<footer>\n${3}\n</footer>\n",
             "</body>",
             "</html>",
-            "",
-            "<style>${4}</style>",
-            "",
+            "<style>\n${4}\n</style>",
         ],
     },
     "Fragment Set HTML": {
         "prefix": "a:frag--html",
         "description": "This is a fragment with set html",
         "isFileTemplate": false,
-        "body": [
-            "<Fragment set:html={${0}} />"
-        ],
+        "body": "<Fragment set:html={${0}} />",
     },
     "Fragment Slot Name": {
         "prefix": "a:frag--slot",
         "description": "This is a fragment with a slot name in it",
         "isFileTemplate": false,
-        "body": [
-            "<Fragment slot='${1}'>",
-            "${2}",
-            "</Fragment>",
-        ],
+        "body": "<Fragment slot='${1}'>\n${2}\n</Fragment>",
     },
     "Pre-rendered Page": {
         "prefix": "a:base-prpg",
         "description": "This is a pre-rendered page snippet",
         "isFileTemplate": false,
         "body": [
-            "---",
-            "export const prerender = true",
-            "",
-            "---",
-            "<${1:div}>",
-            "",
-            "</${1:div}>",
-            "<style>",
-            "${2}",
-            "</style>",
+            "---\nexport const prerender = true\n---",
+            "<${1:div}>\n</div>",
+            "<style>\n${2}\n</style>",
         ],
     },
     "Pre rendered Page with getStaticPaths": {
@@ -141,18 +86,10 @@
         "isFileTemplate": true,
         "body": [
             "---",
-            "import { InferGetStaticParamsType, InferGetStaticPropsType } from \"astro\"",
-            "",
+            "import { InferGetStaticParamsType, InferGetStaticPropsType } from astro/types\n",
             "export const prerender = true",
-            "",
-            "",
-            "",
-            "",
-            "",
             "export const getStaticPaths = async () => {",
-            "",
             "${2}",
-            "",
             "return [",
             "{",
             "params: {},",
@@ -162,13 +99,9 @@
             "}",
             "type Params = InferGetStaticParamsType<typeof getStaticPaths>",
             "type Props = InferGetStaticPropsType<typeof getStaticPaths>",
-            "",
-            "",
-            "",
-            "const {${3}} = Astro.props  as Props",
+            "const {${3}} = Astro.props ",
             "---",
-            "<${1:div}>",
-            "</${1:div}>",
+            "<${1:div}>\n</div>",
         ],
     },
     "Page with getStaticPaths": {
@@ -177,7 +110,7 @@
         "isFileTemplate": false,
         "body": [
             "---",
-            "import { InferGetStaticParamsType, InferGetStaticPropsType } from \"astro\"",
+            "import { InferGetStaticParamsType, InferGetStaticPropsType } from 'astro/types'\n",
             "export const getStaticPaths = async ({}) => {",
             "${2}",
             "return [",
@@ -192,9 +125,7 @@
             "const {${3}} = Astro.props ",
             "const {${4}} = Astro.params",
             "---",
-            "<${1:div}>",
-            "</${1:div}>",
-            ""
+            "<${1:div}>\n</div>\n"
         ],
     },
     "Astro Component": {
@@ -203,27 +134,11 @@
         "isFileTemplate": true,
         "body": [
             "---",
-            "",
-            "type Props = {",
-            "${2}",
-            "}",
-            "",
-            "",
-            "",
+            "type Props = {\n${2}\n}",
             "const {${3}} = Astro.props",
-            "",
             "---",
-            "",
-            "<${1:div}>",
-            "",
-            "",
-            "",
-            "</${1:div}>",
-            "",
-            "",
-            "<style>${4}</style>",
-            "",
-            ""
+            "<${1:div}>\n</div>",
+            "<style>\n${4}\n</style>",
         ],
     },
     "Astro Component with Client Script": {
@@ -232,25 +147,11 @@
         "isFileTemplate": true,
         "body": [
             "---",
-            "",
-            "type Props = {",
-            "${3}",
-            "}",
-            "",
-            "",
-            "",
+            "type Props = {\n${3}\n}",
             "const {${4}} = Astro.props",
-            "",
             "---",
-            "",
-            "<${2:div}>",
-            "",
-            "",
-            "",
-            "</${2:div}>",
-            "",
-            "",
-            "<style>${1}</style>",
+            "<${2:div}>\n</${2:div}>",
+            "<style>\n${1}\n</style>",
             "<script>${5}</script>",
             ""
         ],
@@ -260,16 +161,9 @@
         "description": "This a page with layout scaffold",
         "isFileTemplate": true,
         "body": [
-            "---",
-            "${4}",
-            "---",
-            "",
-            "<${1:Layout}>",
-            "${2}",
-            "</${1:Layout}>",
-            "",
-            "<style>${3}</style>",
-            "",
+            "---${4}---",
+            "<${1:Layout}>\n${2}\n</${1:Layout}>",
+            "<style>\n${3}\n</style>",
         ],
     },
     "Layout Page with Header and Footer slot": {
@@ -277,18 +171,11 @@
         "description": "The is a scaffold for a Layout Page with a header and footer slot and main as default slot",
         "isFileTemplate": false,
         "body": [
-            "---",
-            "${5}",
-            "---",
-            "",
+            "---\n${5}\n---",
             "<${1:Layout}>",
-            "<slot name='header'>",
-            "${2}",
-            "</slot>",
+            "<slot name='header'>\n${2}\n</slot>",
             "${3}",
-            "<slot name='footer'>",
-            "${4}",
-            "</slot>",
+            "<slot name='footer'>\n${4}\n</slot>",
             "</${1:Layout}>"
         ],
     },
@@ -299,47 +186,31 @@
         "body": [
             "---",
             "import { getCollection, CollectionEntry } from 'astro:content';",
-            "",
-            "import { InferGetStaticParamsType, InferGetStaticPropsType } from \"astro\"",
+            "import { InferGetStaticParamsType, InferGetStaticPropsType } from 'astro/types'",
             "export async function getStaticPaths() {",
-            "",
             "const ${2:docs} = await getCollection('${1:docs}');",
-            "",
-            "",
             "return ${2:docs}.map(entry => ({",
-            "",
-            "",
             "params: { slug: entry.slug }, props: { entry }",
             "}));",
             "}",
-            "",
             "type Params = InferGetStaticParamsType<typeof getStaticPaths>",
             "type Props = InferGetStaticPropsType<typeof getStaticPaths>",
-            "",
-            "",
             "const {${3}} = Astro.props ",
             "const {${4}} = Astro.params",
             "const { Content } = await entry.render()",
             "---",
-            "",
-            "",
             "<h1>{entry.data.title}</h1>",
-            "<article>",
-            "<Content />",
-            "</article>",
-            "",
-            "<style>${3}</style>",
+            "<article>\n<Content />\n</article>",
+            "<style>\n${3}\n</style>",
         ],
     },
     "Astro base with Define Vars Script ": {
-        "prefix": "a:cbase-dvsc",
+        "prefix": "a:cbase--dvsc",
         "description": "This is basic scaffold with define vars for script",
         "isFileTemplate": true,
         "body": [
-            "<${1:div}>",
-            " ",
-            "</${1:div}>",
-            " ",
+            "<${1:div}>\n",
+            "</div>\n",
             "<style>",
             "${4}",
             "</style>",
@@ -347,16 +218,13 @@
         ],
     },
     "Astro base with Define Vars Style": {
-        "prefix": "a:cbase-dvst",
+        "prefix": "a:cbase--dvst",
         "description": "This is basic scaffold with define vars for style",
         "isFileTemplate": true,
         "body": [
             "<${1:div}>",
-            "",
-            "</${1:div}>",
-            "",
+            "</div>",
             "<style define:vars={${2}}>${3}</style>",
-            "",
             "<script> ${4} </script>"
         ],
     },
@@ -394,102 +262,8 @@
         "isFileTemplate": false,
         "body": [
             "<${2:div} slot=${1}>",
-            "{",
-            "",
-            "()=> (${3}",
-            "",
-            ")}",
-            "</${2:div}>",
+            "{\n()=> (${3}\n)}",
+            "</div>",
         ],
     },
-    // "Template ": {
-    //     "prefix": "",
-    //     "description": "",
-    //     "isFileTemplate": false,
-    //     "body": [
-    //         "",
-    //         ""
-    //     ],
-    // }
-    // "Template ": {
-    //     "prefix": "",
-    //     "description": "",
-    //     "isFileTemplate": false,
-    //     "body": [
-    //         "",
-    //         ""
-    //     ],
-    // },
-    // "Template ": {
-    //     "prefix": "",
-    //     "description": "",
-    //     "isFileTemplate": false,
-    //     "body": [
-    //         "",
-    //         ""
-    //     ],
-    // },
-    // "Template ": {
-    //     "prefix": "",
-    //     "description": "",
-    //     "isFileTemplate": false,
-    //     "body": [
-    //         "",
-    //         ""
-    //     ],
-    // },
-    // "Template ": {
-    //     "prefix": "",
-    //     "description": "",
-    //     "isFileTemplate": false,
-    //     "body": [
-    //         "",
-    //         ""
-    //     ],
-    // },
-    // "Template ": {
-    //     "prefix": "",
-    //     "description": "",
-    //     "isFileTemplate": false,
-    //     "body": [
-    //         "",
-    //         ""
-    //     ],
-    // },
-    // "Template ": {
-    //     "prefix": "",
-    //     "description": "",
-    //     "isFileTemplate": false,
-    //     "body": [
-    //         "",
-    //         ""
-    //     ],
-    // },
-    // "Template ": {
-    //     "prefix": "",
-    //     "description": "",
-    //     "isFileTemplate": false,
-    //     "body": [
-    //         "",
-    //         ""
-    //     ],
-    // },
-    // "Template ": {
-    //     "prefix": "",
-    //     "description": "",
-    //     "isFileTemplate": false,
-    //     "body": [
-    //         "",
-    //         ""
-    //     ],
-    // },
-    // "Template ": {
-    //     "prefix": "",
-    //     "description": "",
-    //     "isFileTemplate": false,
-    //     "body": [
-    //         "",
-    //         ""
-    //     ],
-    // },
 }

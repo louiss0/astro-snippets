@@ -4,43 +4,31 @@
         "description": "This is for scaffolding a Collection Config",
         "isFileTemplate": true,
         "body": [
-            "import {z, defineCollection} from 'astro:content'",
-            "",
-            "",
-            "const ${1:blog} = defineCollection({",
-            "",
-            "",
-            "schema: z.object({",
-            "",
-            "${2:title}:${3:title}",
-            "",
+            "import {z, defineCollection} from 'astro:content'\n\n",
+            "const ${1:blog} = defineCollection({\n",
+            "schema: z.object({\n${2:title}:${3:title}\n})",
             "})",
-            "",
-            "",
-            "})",
-            "",
-            "export const collections = {",
-            "",
-            "${1:blog}",
-            "",
-            "}"
+            "export const collections = {\n${1:blog}\n}\n"
         ]
     },
     "Single Collection": {
-        "prefix": "a-sc",
+        "prefix": "a-clt",
         "isFileTemplate": false,
         "description": "This is the single collection setup",
         "body": [
-            "const ${1:blog} = defineCollection({",
-            "",
-            "",
-            "schema: z.object({",
-            "",
-            "${2:title}:${3:title}",
-            "",
-            "})",
-            "",
-            "",
+            "const ${1:blog} = defineCollection({\n",
+            "schema: z.object({\n${2:title}:${3:title}\n})",
+            "})"
+        ]
+    },
+    "Single Data Collection": {
+        "prefix": "a-clt--data",
+        "isFileTemplate": false,
+        "description": "This is the single collection setup",
+        "body": [
+            "const ${1:blog} = defineCollection({\n",
+            "type:'data'",
+            "schema: z.object({\n${2:title}:${3:title.relationship()}\n})",
             "})"
         ]
     }
