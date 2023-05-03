@@ -1,6 +1,6 @@
 {
     "Collection Config Setup": {
-        "prefix": "a-base-cc",
+        "prefix": "a:base-cc",
         "description": "This is for scaffolding a Collection Config",
         "isFileTemplate": true,
         "body": [
@@ -12,7 +12,7 @@
         ]
     },
     "Single Collection": {
-        "prefix": "a-clt",
+        "prefix": "a:clt",
         "isFileTemplate": false,
         "description": "This is the single collection setup",
         "body": [
@@ -22,7 +22,7 @@
         ]
     },
     "Single Data Collection": {
-        "prefix": "a-clt--data",
+        "prefix": "a:clt--data",
         "isFileTemplate": false,
         "description": "This is the single collection setup",
         "body": [
