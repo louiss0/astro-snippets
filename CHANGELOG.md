@@ -1,5 +1,19 @@
 # Change Log
 
+## 2.3.1
+
+- Fixed inconsistent naming issues.
+- Removed Define Vars Snippets.
+- Made sure that **--** is used for modifiers.
+- Changed  **fn** to **anfn**. 
+- Added **anfn** as an official keyword.
+
+## 2.3.0
+
+- Added data collection to the snippets
+- Removed slot tern
+- Changed naming of a- to a:  
+
 ## 2.2.1
 
 ### Patch Changes

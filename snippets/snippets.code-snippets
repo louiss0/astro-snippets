@@ -167,7 +167,7 @@
         ],
     },
     "Layout Page with Header and Footer slot": {
-        "prefix": "a:base-lpg-hmf",
+        "prefix": "a:base-lpg--hmf",
         "description": "The is a scaffold for a Layout Page with a header and footer slot and main as default slot",
         "isFileTemplate": false,
         "body": [
@@ -180,7 +180,7 @@
         ],
     },
     "Content Collections Page with getStaticPaths": {
-        "prefix": "a:base-gc-gsp",
+        "prefix": "a:base-gsp--gc",
         "description": "Scaffold for Get Collections With getStaticPaths",
         "isFileTemplate": true,
         "body": [
@@ -204,30 +204,6 @@
             "<style>\n${3}\n</style>",
         ],
     },
-    "Astro base with Define Vars Script ": {
-        "prefix": "a:cbase--dvsc",
-        "description": "This is basic scaffold with define vars for script",
-        "isFileTemplate": true,
-        "body": [
-            "<${1:div}>\n",
-            "</div>\n",
-            "<style>",
-            "${4}",
-            "</style>",
-            "<script define:vars={${2}}>${3}</script>"
-        ],
-    },
-    "Astro base with Define Vars Style": {
-        "prefix": "a:cbase--dvst",
-        "description": "This is basic scaffold with define vars for style",
-        "isFileTemplate": true,
-        "body": [
-            "<${1:div}>",
-            "</div>",
-            "<style define:vars={${2}}>${3}</style>",
-            "<script> ${4} </script>"
-        ],
-    },
     "Map Expression ": {
         "prefix": "a:map",
         "description": "This is a simple map expression for Astro",
@@ -237,7 +213,7 @@
         ],
     },
     "Map Expression Using a Block": {
-        "prefix": "a:map-ft",
+        "prefix": "a:map--anfn",
         "description": "This is a map expression for Astro using a anonymous function",
         "isFileTemplate": false,
         "body": [
@@ -257,7 +233,7 @@
         ],
     },
     "Fragment Slot with Function Expression": {
-        "prefix": "a:slot-ft",
+        "prefix": "a:frag--slot--anfn",
         "description": "A fragment slot with a function to return HTML",
         "isFileTemplate": false,
         "body": [
