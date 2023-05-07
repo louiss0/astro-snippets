@@ -138,3 +138,8 @@ Define vars was not good.
 
 - Content Collections scaffold
 - Define Collections scaffold
+
+
+## [0.0.0]
+
+- Inital release
