@@ -1,6 +1,10 @@
 # Change Log
 
-## 2.3.1
+## [Unreleased]
+
+### [2.3.2]
+
+## [2.3.1]
 
 - Fixed inconsistent naming issues.
 - Removed Define Vars Snippets.
@@ -8,55 +12,55 @@
 - Changed  **fn** to **anfn**. 
 - Added **anfn** as an official keyword.
 
-## 2.3.0
+## [2.3.0]
 
 - Added data collection to the snippets
 - Removed slot tern
 - Changed naming of a- to a:  
 
-## 2.2.1
+## [2.2.1]
 
 ### Patch Changes
 
 - For images once again
 
-## 2.1.5
+## [2.1.5]
 
 ### Patch Changes
 
 - Made the images work vsix ships with own version of readme
 
-## 2.2.0
+## [2.2.0]
 
 ### Minor Changes
 
 - This is the one for the images I think it will make them appear
 
-## 2.1.4
+## [2.1.4]
 
 ### Patch Changes
 
 - Testing out things related to changes
 
-## 2.1.3
+## [2.1.3]
 
 ### Patch Changes
 
 - For the images don't know why
 
-## 2.1.2
+## [2.1.2]
 
 ### Patch Changes
 
 - Had to change url
 
-## 2.1.1
+## [2.1.1]
 
 ### Patch Changes
 
 - Fixed repository link
 
-## 2.1.0
+## [2.1.0]
 
 ### Minor Changes
 
@@ -72,19 +76,19 @@ All notable changes to the "astro-snippets" extension will be documented in this
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## 1.0.0
+## [1.0.0]
 
 Initial release of Astro Snippets this release is about just using the scaffolding things for Astro. Other things will come out after 2.0.0.
 API shortcuts will come soon.
 
-## 1.0.3
+## [1.0.3]
 
 ### Changed
 
 Fixed issue Page and layout snippets were not working correctly.
 Define vars was not good.
 
-## 1.1.0
+## [1.1.0]
 
 ### Changed
 
@@ -105,14 +109,14 @@ Define vars was not good.
 - Slot ternary snippet
 - IIFE snippet
 
-## 1.1.1
+## [1.1.1]
 
 ### Changed
 
 - Fragment Slot with Function Expression now uses a div by default and has parenthesis in it
 - Astro Ternary with Slots has and Render is now Astro Ternary with Slots has
 
-## 1.1.2
+## [1.1.2]
 
 ### Fixed
 
@@ -124,7 +128,7 @@ Define vars was not good.
 
 - All `func` words are changed to ft as in *f*unc - *t*ion
 
-## 2.0.0
+## [2.0.0]
 
 ### Fixed
 
