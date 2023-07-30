@@ -15,6 +15,9 @@
     "astro",
     "snippets"
   ],
+  "scripts": {
+    "release": "release-it"
+  },
   "icon": "images/astro-icon.jpg",
   "categories": [
     "Snippets"
