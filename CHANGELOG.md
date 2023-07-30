@@ -110,7 +110,7 @@ Define vars was not good.
 - Removed html from fragment set html snippet
 - The get static paths snippets now support changing the html the going inside of getStaticPaths and finally
 - The style and script parts of snippets are in a single line.
-  > Dev's can now <kbd>Ctrl</kbd> + <kbd>Space</kbd> to exit.
+  > Dev's can now <kbd>Ctrl</kbd> + <kbd>Space</kbd> to exit.  <!--- <!-- markdownlint-disable-line  -->  >
 
 ### Added
 
