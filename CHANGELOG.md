@@ -1,13 +1,13 @@
 <!-- <!-- markdownlint-disable no-duplicate-heading--> -->
 # Change Log
 
-[Unreleased]
+## [Unreleased]
 
-## Added
+### Added
 
 - newlines to many snippets
 
-## Changed
+### Changed
 
 - astro/types into astro for all related snippets.
 - prpg to pr-pg.
