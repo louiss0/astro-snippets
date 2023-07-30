@@ -2,7 +2,7 @@
   "name": "astro-snippets",
   "displayName": "Astro Snippets",
   "description": "It is set of snippets for Astro JS ",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/louiss0/astro-snippets"
@@ -39,7 +39,6 @@
     ]
   },
   "release-it": {
-    "after:bump": "vsce package",
     "after:git:release": "echo After git push, before github release",
     "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}.",
     "git": {
