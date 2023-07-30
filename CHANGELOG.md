@@ -1,6 +1,8 @@
 <!-- <!-- markdownlint-disable no-duplicate-heading--> -->
 # Change Log
 
+[Unreleased]
+
 ## [2.4.0] - 2023-07-30
 
 ### Added
