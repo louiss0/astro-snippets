@@ -27,7 +27,7 @@ I created list for you to understand the fundamental things about these snippets
 
 - `pg` stands for page
 
-- `prpg` stands for pre-rendered page
+- `pr-pg` stands for pre-rendered page
 
 - `clt` stands for **col** **lec** **tion**
 
@@ -49,8 +49,8 @@ Here is a table with a list of all the snippets you can use. Hope this is helpfu
 | a:frag--html       | This is a fragment with set html                              |
 | a:frag--slot       | This is a fragment with a slot name in it                     |
 | a:frag--slot--anfn | A fragment slot with a function to return HTML                |
-| a:base-prpg        | This is a pre-rendered page snippet                           |
-| a:base-prpg--gsp   | This is a pre-rendered page with getStaticPaths Setup         |
+| a:base-pr-pg        | This is a pre-rendered page snippet                           |
+| a:base-pr-pg--gsp   | This is a pre-rendered page with getStaticPaths Setup         |
 | a:base-gsp         | This is a page snippet with getStaticPaths                    |
 | a:base-gsp--gc     | Scaffold for Get Collections With getStaticPaths              |
 | a:base-cmp         | This is a basic Astro components                              |

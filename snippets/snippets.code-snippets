@@ -71,7 +71,7 @@
         "body": "<Fragment slot='${1}'>\n${2}\n</Fragment>",
     },
     "Pre-rendered Page": {
-        "prefix": "a:base-prpg",
+        "prefix": "a:base-pr-pg",
         "description": "This is a pre-rendered page snippet",
         "isFileTemplate": false,
         "body": [
@@ -81,12 +81,12 @@
         ],
     },
     "Pre rendered Page with getStaticPaths": {
-        "prefix": "a:base-prpg--gsp",
+        "prefix": "a:base-pr-pg--gsp",
         "description": "This is a pre-rendered page with getStaticPaths Setup",
         "isFileTemplate": true,
         "body": [
             "---",
-            "import { InferGetStaticParamsType, InferGetStaticPropsType } from astro/types\n",
+            "import { InferGetStaticParamsType, InferGetStaticPropsType } from 'astro'\n",
             "export const prerender = true",
             "export const getStaticPaths = async () => {",
             "${2}",
@@ -97,7 +97,6 @@
             "}",
             "]",
             "}",
-            "type Params = InferGetStaticParamsType<typeof getStaticPaths>",
             "type Props = InferGetStaticPropsType<typeof getStaticPaths>",
             "const {${3}} = Astro.props ",
             "---",
@@ -110,7 +109,7 @@
         "isFileTemplate": false,
         "body": [
             "---",
-            "import { InferGetStaticParamsType, InferGetStaticPropsType } from 'astro/types'\n",
+            "import { InferGetStaticPropsType } from 'astro'\n",
             "export const getStaticPaths = async ({}) => {",
             "${2}",
             "return [",
@@ -120,10 +119,8 @@
             "}",
             "]",
             "}",
-            "type Params = InferGetStaticParamsType<typeof getStaticPaths>",
             "type Props = InferGetStaticPropsType<typeof getStaticPaths>",
             "const {${3}} = Astro.props ",
-            "const {${4}} = Astro.params",
             "---",
             "<${1:div}>\n</div>\n"
         ],
@@ -186,17 +183,15 @@
         "body": [
             "---",
             "import { getCollection, CollectionEntry } from 'astro:content';",
-            "import { InferGetStaticParamsType, InferGetStaticPropsType } from 'astro/types'",
+            "import { InferGetStaticParamsType, InferGetStaticPropsType } from 'astro'",
             "export async function getStaticPaths() {",
             "const ${2:docs} = await getCollection('${1:docs}');",
             "return ${2:docs}.map(entry => ({",
             "params: { slug: entry.slug }, props: { entry }",
             "}));",
             "}",
-            "type Params = InferGetStaticParamsType<typeof getStaticPaths>",
             "type Props = InferGetStaticPropsType<typeof getStaticPaths>",
             "const {${3}} = Astro.props ",
-            "const {${4}} = Astro.params",
             "const { Content } = await entry.render()",
             "---",
             "<h1>{entry.data.title}</h1>",
@@ -213,7 +208,7 @@
         ],
     },
     "Map Expression Using a Block": {
-        "prefix": "a:map--anfn",
+        "prefix": "a:map--an-fn",
         "description": "This is a map expression for Astro using a anonymous function",
         "isFileTemplate": false,
         "body": [
