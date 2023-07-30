@@ -49,7 +49,10 @@
       "release": true
     },
     "plugins": {
-      "@release-it/keep-a-changelog": true
+      "@release-it/keep-a-changelog": {
+        "head": "main",
+        "addUnreleased": true
+      }
     },
     "npm": {
       "publish": false
