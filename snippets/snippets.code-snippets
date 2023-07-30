@@ -224,14 +224,4 @@
             "{ ${1:expression} ? ${2} : ${3:null} }",
         ],
     },
-    "Fragment Slot with Function Expression": {
-        "prefix": "a:frag--slot--anfn",
-        "description": "A fragment slot with a function to return HTML",
-        "isFileTemplate": false,
-        "body": [
-            "<${2:div} slot=${1}>",
-            "{\n()=> (${3}\n)}",
-            "</div>",
-        ],
-    },
 }
