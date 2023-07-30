@@ -7,9 +7,9 @@
     },
     "Immediately Invoked Generator Expression": {
         "body": [
-            "{(function* () {",
-            "for(let ${0:item} of ${0:item}s) {\n${1}\n}",
-            "})()}"
+            "{(function* () {\n",
+            "for(const ${0:item} of ${0:item}s) {\n${1}\n}\n",
+            "})()\n}"
         ],
         "prefix": "a:iige",
         "description": "This is an generator expression"
@@ -54,7 +54,7 @@
             "<main>\n${2}\n</main>\n",
             "<footer>\n${3}\n</footer>\n",
             "</body>",
-            "</html>",
+            "</html>\n",
             "<style>\n${4}\n</style>",
         ],
     },
