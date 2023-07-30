@@ -1,15 +1,24 @@
+<!-- <!-- markdownlint-disable no-duplicate-heading--> -->
 # Change Log
 
+[Unreleased]
+
+## Added
+
+- newlines to many snippets
+
+## Changed
+
+- astro/types into astro for all related snippets.
+- prpg to pr-pg.
+- The Content Collections Page with getStaticPaths snippet enables the user to destructure `entry.data`.
+  
 ## [2.3.1] - 2023-05-06
-
-### [2.3.2]
-
-## [2.3.1]
 
 - Fixed inconsistent naming issues.
 - Removed Define Vars Snippets.
 - Made sure that **--** is used for modifiers.
-- Changed  **fn** to **anfn**. 
+- Changed  **fn** to **anfn**.
 - Added **anfn** as an official keyword.
 
 ## [2.3.0]
@@ -138,7 +147,6 @@ Define vars was not good.
 
 - Content Collections scaffold
 - Define Collections scaffold
-
 
 ## [0.0.0]
 
