@@ -39,6 +39,7 @@
     ]
   },
   "release-it": {
+    "after:bump": "vsce package",
     "after:git:release": "echo After git push, before github release",
     "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}.",
     "git": {
@@ -50,7 +51,9 @@
     "plugins": {
       "@release-it/keep-a-changelog": true
     },
-    "npm": false
+    "npm": {
+      "publish": false
+    }
   },
   "devDependencies": {
     "@release-it/keep-a-changelog": "^4.0.0",
